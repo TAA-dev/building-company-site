@@ -1,2 +1,1 @@
-# test-task-layout
-Educational layout for online school
+Верстка сайта для строительной компании

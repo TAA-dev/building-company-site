@@ -1,15 +1,7 @@
 {
-  "name": "test-task-layout",
+  "name": "building-company-site",
   "version": "0.1.0",
-  "description": "Layout for a school partner.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WebHeroSchool/test-task-layout.git"
-  },
-  "bugs": {
-    "url": "https://github.com/WebHeroSchool/test-task-layout/issues"
-  },
-  "homepage": "https://github.com/WebHeroSchool/test-task-layout#readme",
+  "description": "building-company-site.",
   "scripts": {
     "mk-src": "mkdir -p -v ./source/template ./source/scripts ./source/style ./source/fonts ./source/img",
     "build": "gulp build",
@@ -22,7 +14,6 @@
   ],
   "author": "Anton Tkachuk",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
