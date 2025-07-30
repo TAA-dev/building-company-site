@@ -1,6 +1,9 @@
 html,
 body {
+  box-sizing: border-box;
   margin: 0;
   font: var(--main-font-regular);
-  background: var(--main-bg-color);
+  /* background: var(--main-bg-gradient) no-repeat; */
+  height: 100%;
+  color: var(--color-primary);
 }
