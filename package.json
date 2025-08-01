@@ -1,5 +1,5 @@
 {
-  "homepage": "https://taa-dev.github.io/building-company-site/",
+  "homepage": "https://taa-dev.github.io/building-company-site",
   "name": "building-company-site",
   "version": "0.1.0",
   "description": "building-company-site.",
@@ -8,7 +8,8 @@
     "mk-src": "mkdir -p -v ./source/template ./source/scripts ./source/style ./source/fonts ./source/img",
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gulp build && gh-pages -d dist"
+    "predeploy": "rm -rf dist && npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "html",
