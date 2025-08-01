@@ -91,3 +91,18 @@
     font-size: 2.5vw;
   }
 }
+
+@media (max-width: 414px) {
+  .main-header__main-subtitle {
+    font-size: 4vw;
+  }
+
+  .main-content-wrapper {
+    font-size: 4vw;
+  }
+
+  .home-page__content-description-start,
+  .home-page__content-description-end {
+    width: 100%;
+  }
+}

@@ -104,6 +104,11 @@
     width: 100%;
   }
 
+  .about-us__director-info {
+    font-size: 4vw;
+    grid-column-end: 4;
+  }
+
   .about-us__divider {
     width: 100%;
   }
@@ -112,5 +117,13 @@
     width: 100%;
     grid-template-columns: 1fr;
     gap: 5vw;
+  }
+
+  .about-us__organization-title {
+    font-size: 4vw;
+  }
+
+  .about-us__organization {
+    font-size: 4vw;
   }
 }

@@ -135,3 +135,14 @@
     left: 15vw;
   }
 }
+
+@media (max-width: 414px) {
+  .business-directions__title {
+    font-size: 6vw;
+  }
+
+  .business-directions__list {
+    font-size: 4vw;
+    width: 70%;
+  }
+}
