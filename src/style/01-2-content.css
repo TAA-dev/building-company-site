@@ -1,0 +1,6 @@
+.content {
+  /* background-color: var(--main-bg-color); */
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}

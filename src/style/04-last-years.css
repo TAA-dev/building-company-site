@@ -1,0 +1,35 @@
+.last-years {
+  padding: 10rem 10rem;
+  box-sizing: border-box;
+  background-color: var(--bg-color-primary);
+}
+
+.last-years__description {
+  box-sizing: border-box;
+  text-align: center;
+  font: var(--secondary-font-bold);
+  font-size: 3.2rem;
+  letter-spacing: .2rem;
+  /* color: var(--color-contrast); */
+  color: var(--color-primary);
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .last-years {
+    padding: 5rem;
+  }
+
+  .last-years__description {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .last-years {
+    padding: 5vw;
+  }
+
+  .last-years__description {
+    font-size: 2.2vw;
+  }
+}
