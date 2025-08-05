@@ -6,7 +6,33 @@ body {
   /* background: var(--main-bg-gradient) no-repeat; */
   height: 100%;
   color: var(--color-primary);
-  background-color: var(--bg-color-primary);
+  background-color: #FFFFFF;
+}
+
+
+.title-main {
+  color: var(--color-title);
+  font: var(--main-font-bold);
+  font-size: 4rem;
+  letter-spacing: -1.2px;
+  margin: 0;
+}
+
+
+.title-secondary {
+  color: var(--color-title);
+  font: var(--main-font-semi-bold);
+  font-size: 3rem;
+  letter-spacing: -1.2px;
+  margin: 0 0 2.5rem;
+}
+
+
+.text-main {
+  color: var(--color-text);
+  font: var(--main-font-regular);
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 

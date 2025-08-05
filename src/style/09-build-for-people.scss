@@ -1,0 +1,15 @@
+.build-for-people {
+  height: 10rem;
+  background-image: url(../img/run-strings/build-for-people.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 200%;
+
+  animation: 15s run-string-building-for-people forwards infinite linear;
+}
+
+@keyframes run-string-building-for-people {
+  to {
+    background-position-x: -100%;
+  }
+}

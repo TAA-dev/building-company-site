@@ -1,6 +1,7 @@
-.content {
-  /* background-color: var(--main-bg-color); */
+.content-wrapper {
   margin: auto;
-  width: 100%;
+  width: 1440px;
   box-sizing: border-box;
+  position: relative;
+  padding: 0 5rem;
 }

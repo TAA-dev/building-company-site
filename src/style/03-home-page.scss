@@ -1,0 +1,29 @@
+.home-page {
+  &__header {
+    margin-bottom: 7.5rem;
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+
+  &__description {
+    line-height: 1.5;
+    margin-bottom: 3rem;
+
+    &-accented {
+      color: var(--color-primary);
+    }
+  }
+
+
+  .home-page__button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  &__image {
+    width: 100%;
+  }
+}

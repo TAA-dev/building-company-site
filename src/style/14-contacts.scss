@@ -1,0 +1,23 @@
+.contacts {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+
+  &__title {
+    font: var(--main-font-medium);
+    font-size: 1rem;
+    color: var(--color-title);
+    margin: 0;
+  }
+
+
+  &__text {
+    font: var(--main-font-medium);
+    color: var(--color-text);
+    font-size: 1rem;
+    margin: 0;
+  }
+}

@@ -1,0 +1,19 @@
+.command {
+  &__photo {
+    margin-bottom: 2.75rem;
+  }
+
+  &__sub-title {
+    font: var(--main-font-medium);
+    font-size: 1.5rem;
+    color: var(--color-title);
+    margin: 0 0 .5rem;
+  }
+
+  &__description {
+    font: var(--main-font-regular);
+    font-size: 1.5rem;
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+}

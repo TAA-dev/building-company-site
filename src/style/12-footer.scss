@@ -1,0 +1,14 @@
+.footer {
+  border-top: 1px solid #454545;
+  padding: 4.75rem 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__lent {
+    transition: transform .2s linear;
+  }
+
+  &__logo {
+    width: 20rem;
+  }
+}

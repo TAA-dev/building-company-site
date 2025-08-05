@@ -1,0 +1,19 @@
+.slider {
+  &__wrapper {
+    overflow: hidden;
+    margin-bottom: 6.5rem;
+  }
+
+  &__lent {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+
+  &__label {
+    font: var(--main-font-medium);
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+  }
+}

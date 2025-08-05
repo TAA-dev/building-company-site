@@ -1,0 +1,40 @@
+.about-us {
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+
+
+  &__description {
+    margin-bottom: 2.5rem;
+  }
+
+
+  &__photo {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+
+  &__sub-title {
+    font: var(--main-font-medium);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--color-title);
+    margin-bottom: 0.5rem;
+  }
+
+
+  &__text {
+    color: var(--color-text);
+    font: var(--main-font-regular);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+  }
+
+
+  &__map {
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+}

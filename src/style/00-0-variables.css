@@ -1,5 +1,7 @@
 :root {
   --color-primary: #002760;
+  --color-title: black;
+  --color-text: rgba(0, 0, 0, 0.75);
   --color-secondary: rgb(19, 50, 62);
   --color-contrast: rgba(175, 150, 135, 1);
 
@@ -12,10 +14,10 @@
   --bg-color-primary: rgba(240, 240, 240, 0.3);
   --bg-color-secondary: #fff2e9;
 
-  --main-font-bold: normal normal 700 1rem "gilroy", sans-serif;
-  --main-font-regular: normal normal 400 1rem "gilroy", sans-serif;
-  --main-font-light: normal normal 300 1rem "gilroy", sans-serif;
-  --secondary-font-bold: normal normal 700 1rem "franklin", sans-serif;
+  --main-font-regular: normal normal 400 1rem "inter", sans-serif;
+  --main-font-medium: normal normal 500 1rem "inter", sans-serif;
+  --main-font-semi-bold: normal normal 600 1rem "inter", sans-serif;
+  --main-font-bold: normal normal 700 1rem "inter", sans-serif;
 
 
   --main-bg-gradient: linear-gradient(90deg, rgba(135, 150, 175, 1) 0%, rgba(255, 255, 255, 0) 100%);
