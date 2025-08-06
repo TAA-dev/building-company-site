@@ -8,10 +8,10 @@
   }
 
   &__logo-wrapper {
-    position: fixed;
+    // position: fixed;
     left: 0;
     bottom: 0;
-    padding: 5rem 0;
+    padding: 3rem 0;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
@@ -22,4 +22,15 @@
   &__logo {
     width: 20rem;
   }
+
+
+  &__contacts-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+
+
+#map {
+  width: 100%;
+  height: 500px;
 }

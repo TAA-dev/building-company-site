@@ -1,15 +1,15 @@
 .investo-block-run {
   height: 10rem;
   background-image: url(../img/run-strings/investo.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position-y: center;
-  background-position-x: 150%;
+  background-position-x: 1000vw;
 
-  animation: 15s run-string-investo forwards infinite linear;
+  animation: 240s run-string-investo forwards infinite linear;
 }
 
 @keyframes run-string-investo {
   to {
-    background-position-x: -50%;
+    background-position-x: -1000vw;
   }
 }

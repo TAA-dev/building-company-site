@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
-    <link rel="stylesheet" href="./style/style-min.css">
-    <link rel="icon" href="./img/logo.svg" type="image/svg">
-    <meta name="description" content="Контактные данные строительной компании «ИнвесТо». Адрес, телефоны, email, схема проезда. Режим работы и форма обратной связи для быстрой связи с нами.">
 
-  </head>
-  <body>
-    <main class="content">
-      @@include('template/header.html')
-      @@include('template/contacts-screen.html')
-    </main>
-    <script src="./js/main-min.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="./style/style-min.css">
+  <link rel="icon" href="./img/logo.svg" type="image/svg">
+  <meta name="description"
+    content="Контактные данные строительной компании «ИнвесТо». Адрес, телефоны, email, схема проезда. Режим работы и форма обратной связи для быстрой связи с нами.">
+
+</head>
+
+<body>
+  <main class="content">
+    @@include('template/header.html')
+    @@include('template/contacts-screen.html')
+  </main>
+
+  @@include('template/map-script.html')
+  <script src="./js/main-min.js"></script>
+</body>
+
 </html>

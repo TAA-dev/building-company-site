@@ -1,0 +1,52 @@
+<script src="https://api-maps.yandex.ru/2.1/?apikey=2987248e-356e-4801-9c3b-ec24283dd767&lang=ru_RU"
+  type="text/javascript"></script>
+<script>
+  ymaps.ready(init);
+
+  function init () {
+    var pointA = [ 55.790693, 37.556072 ];
+    var pointB = [ 55.795282, 37.547001 ];
+    var pointC = [ 55.799998, 37.534422 ];
+
+
+    // Создаем карту
+    var myMap = new ymaps.Map("map", {
+      center: pointB,
+      zoom: 15,
+      controls: [],
+    });
+
+
+
+    // Создаем маршрут
+    var route1 = new ymaps.multiRouter.MultiRoute({
+      referencePoints: [
+        pointA,
+        pointB
+      ],
+      params: {
+        routingMode: "pedestrian" // "auto", "masstransit", "pedestrian"
+      },
+      properties: {
+      }
+    }, {
+      // boundsAutoApply: true // автоматически подгонять карту под маршрут
+    });
+
+    var route2 = new ymaps.multiRouter.MultiRoute({
+      referencePoints: [
+        pointC,
+        pointB
+      ],
+      params: {
+        routingMode: "pedestrian" // "auto", "masstransit", "pedestrian"
+      }
+    }, {
+      // boundsAutoApply: true // автоматически подгонять карту под маршрут
+      routeActiveStrokeColor: "#0054FF" // синий цвет
+    });
+
+    // Добавляем маршрут на карту
+    myMap.geoObjects.add(route1).add(route2);
+  }
+</script>

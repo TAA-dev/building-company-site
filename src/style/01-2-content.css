@@ -1,6 +1,7 @@
 .content-wrapper {
   margin: auto;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   box-sizing: border-box;
   position: relative;
   padding: 0 5rem;
