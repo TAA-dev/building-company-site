@@ -1,6 +1,10 @@
 .contacts-screen {
   &__title {
     margin-bottom: 1.5rem;
+
+    @media (max-width: 430px) {
+      font-size: 2rem;
+    }
   }
 
   &__description {
@@ -21,6 +25,11 @@
 
   &__logo {
     width: 20rem;
+
+    @media (max-width: 430px) {
+      width: 50vw;
+      align-self: center;
+    }
   }
 
 

@@ -12,7 +12,7 @@
     // Создаем карту
     var myMap = new ymaps.Map("map", {
       center: pointB,
-      zoom: 15,
+      zoom: 10,
       controls: [],
     });
 
@@ -47,6 +47,15 @@
     });
 
     // Добавляем маршрут на карту
-    myMap.geoObjects.add(route1).add(route2);
+    myMap.geoObjects.add(route1).add(route2)
+
+
+
+
+    const bounds = ymaps.util.bounds.fromPoints([ pointA, pointC ]);
+    myMap.setBounds(bounds, {
+      checkZoomRange: true,
+      zoomMargin: 5
+    });
   }
 </script>

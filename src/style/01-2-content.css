@@ -5,4 +5,9 @@
   box-sizing: border-box;
   position: relative;
   padding: 0 5rem;
+
+
+  @media (max-width: 430px) {
+    padding: 0 1rem;
+  }
 }

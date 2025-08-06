@@ -1,6 +1,11 @@
 .projects {
   &__main-title {
     margin-bottom: 4rem;
+
+
+    @media (max-width: 430px) {
+      font-size: 2rem;
+    }
   }
 
   &__wrapper {
@@ -10,17 +15,34 @@
     gap: 2.5rem 1rem;
     margin-bottom: 5rem;
 
+    @media (max-width: 430px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
     &-aternative {
       grid-template-columns: 40% 60%;
+
+      @media (max-width: 430px) {
+        grid-template-columns: 1fr;
+      }
     }
 
     &-correct {
       grid-template-rows: 50% 40%;
+
+      @media (max-width: 430px) {
+        grid-template-rows: 1fr;
+      }
     }
   }
 
   &__photo {
     border-radius: 0.5rem;
+
+    @media (max-width: 430px) {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -46,6 +68,11 @@
   &__project-first {
     grid-row-start: 1;
     grid-row-end: 3;
+
+    @media (max-width: 430px) {
+      grid-row-start: unset;
+      grid-row-end: unset;
+    }
   }
 
   &__project-second {
@@ -53,6 +80,13 @@
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
+
+    @media (max-width: 430px) {
+      grid-row-start: unset;
+      grid-row-end: unset;
+      grid-column-start: unset;
+      grid-column-end: unset;
+    }
   }
 
   &__project-third {
@@ -60,5 +94,12 @@
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
+
+    @media (max-width: 430px) {
+      grid-row-start: unset;
+      grid-row-end: unset;
+      grid-column-start: unset;
+      grid-column-end: unset;
+    }
   }
 }

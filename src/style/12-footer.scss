@@ -2,7 +2,15 @@
   border-top: 1px solid #454545;
   padding: 4.75rem 0;
   display: flex;
+  gap: 2rem;
   justify-content: space-between;
+
+
+  @media (max-width: 430px) {
+    padding: 2rem;
+    flex-direction: column-reverse;
+  }
+
 
   &__lent {
     transition: transform .2s linear;
@@ -10,5 +18,11 @@
 
   &__logo {
     width: 20rem;
+
+
+    @media (max-width: 430px) {
+      width: 50vw;
+      align-self: center;
+    }
   }
 }

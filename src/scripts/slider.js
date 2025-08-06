@@ -20,7 +20,7 @@ function enableScroll() {
   window.scrollTo(0,(scrollTop * -1));
 }
 
-
+let lastY = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
   const sliderWrapper = document.querySelector('.slider__wrapper');
@@ -30,13 +30,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Обработчик события прокрутки
   function handleScroll(event) {
+let deltaY = event?.deltaY || lastY
+if(event.type === 'touchmove'){
+  const currentY = event.touches[0].clientY; // Текущая позиция Y
+  deltaY = currentY - lastY; // Разница между текущей и предыдущей позицией
+}
+
+    console.log('event',event);
+
     let lentWidth = sliderLent.scrollWidth;
     const minOffset = 0
     const maxOffset = lentWidth - sliderWrapper.offsetWidth
 
     const sliderTop = sliderWrapper.getBoundingClientRect().top
     const sliderBottom = sliderWrapper.getBoundingClientRect().bottom
-    const sliderHeight = sliderWrapper.getBoundingClientRect().height
 
     if (sliderTop > 0 && (sliderBottom - windowHeight) < 0) {
       disableScroll()
@@ -48,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       let direction = 1
-      if (event.deltaY < 0) {
+      if (deltaY < 0) {
         direction = -1
       }
 
@@ -57,10 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
       sliderLent.style.transform = `translateX(${newOffset}px)`;
 
-      if(event.deltaY > 0 && newOffset * -1 > maxOffset) {
+      if(deltaY > 0 && newOffset * -1 > maxOffset) {
         sliderLent.style.transform = `translateX(-${maxOffset}px)`;
         enableScroll()
-      } else if(event.deltaY < 0 && newOffset * -1 < minOffset) {
+      } else if(deltaY < 0 && newOffset * -1 < minOffset) {
         sliderLent.style.transform = `translateX(-${minOffset}px)`;
         enableScroll()
       }
@@ -71,4 +78,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Добавляем обработчики событий
   document.addEventListener('wheel', throttled);
+  document.addEventListener('touchmove', throttled);
+
+  document.addEventListener('touchstart', (e) => {
+  lastY = e.touches[0].clientY; // Запоминаем начальную позицию
+}, {passive: true});
+
 });
