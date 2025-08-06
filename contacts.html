@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
-    <link rel="stylesheet" href="./style/style-min.css">
-    <link rel="icon" href="./img/logo.svg" type="image/svg">
-    <meta name="description" content="Контактные данные строительной компании «ИнвесТо». Адрес, телефоны, email, схема проезда. Режим работы и форма обратной связи для быстрой связи с нами.">
 
-  </head>
-  <body>
-    <main class="content">
-      <header class="header">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="./style/style-min.css">
+  <link rel="icon" href="./img/logo.svg" type="image/svg">
+  <meta name="description"
+    content="Контактные данные строительной компании «ИнвесТо». Адрес, телефоны, email, схема проезда. Режим работы и форма обратной связи для быстрой связи с нами.">
+
+</head>
+
+<body>
+  <main class="content">
+    <header class="header">
   <div class="content-wrapper header__inner">
 
     <a href="index.html">
@@ -32,7 +35,7 @@
   </div>
 </header>
 
-      <section class="contacts-screen">
+    <section class="contacts-screen">
 
   <div class="content-wrapper">
     <h2 class="title-main contacts-screen__title">
@@ -43,7 +46,8 @@
       Сотрудниĸи нашей ĸомпании ответят на все ваши вопросы.
     </p>
 
-    <div class="contacts__wrapper">
+    <div class="contacts-screen__contacts-wrapper">
+      <div class="contacts__wrapper">
   <h3 class="contacts__title">Контакты</h3>
 
   <p class="contacts__text">+74993904969</p>
@@ -51,6 +55,10 @@
   <p class="contacts__text">welcome@struktura.company</p>
 </div>
 
+    </div>
+
+
+    <div id="map"></div>
 
     <div class="contacts-screen__logo-wrapper">
       <img class="contacts-screen__logo" src="img/logo.svg" alt="">
@@ -59,7 +67,62 @@
 
 </section>
 
-    </main>
-    <script src="./js/main-min.js"></script>
-  </body>
+  </main>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=2987248e-356e-4801-9c3b-ec24283dd767&lang=ru_RU"
+  type="text/javascript"></script>
+<script>
+  ymaps.ready(init);
+
+  function init () {
+    var pointA = [ 55.790693, 37.556072 ];
+    var pointB = [ 55.795282, 37.547001 ];
+    var pointC = [ 55.799998, 37.534422 ];
+
+
+    // Создаем карту
+    var myMap = new ymaps.Map("map", {
+      center: pointB,
+      zoom: 15,
+      controls: [],
+    });
+
+
+
+    // Создаем маршрут
+    var route1 = new ymaps.multiRouter.MultiRoute({
+      referencePoints: [
+        pointA,
+        pointB
+      ],
+      params: {
+        routingMode: "pedestrian" // "auto", "masstransit", "pedestrian"
+      },
+      properties: {
+      }
+    }, {
+      // boundsAutoApply: true // автоматически подгонять карту под маршрут
+    });
+
+    var route2 = new ymaps.multiRouter.MultiRoute({
+      referencePoints: [
+        pointC,
+        pointB
+      ],
+      params: {
+        routingMode: "pedestrian" // "auto", "masstransit", "pedestrian"
+      }
+    }, {
+      // boundsAutoApply: true // автоматически подгонять карту под маршрут
+      routeActiveStrokeColor: "#0054FF" // синий цвет
+    });
+
+    // Добавляем маршрут на карту
+    myMap.geoObjects.add(route1).add(route2);
+  }
+</script>
+
+  <script src="./js/main-min.js"></script>
+</body>
+
 </html>
