@@ -8,6 +8,11 @@
     display: flex;
     gap: 1.5rem;
     transition: transform .3s linear;
+
+    @media (max-width: 430px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
 

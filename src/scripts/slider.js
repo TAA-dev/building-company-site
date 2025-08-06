@@ -30,13 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Обработчик события прокрутки
   function handleScroll(event) {
-let deltaY = event?.deltaY || lastY
-if(event.type === 'touchmove'){
-  const currentY = event.touches[0].clientY; // Текущая позиция Y
-  deltaY = currentY - lastY; // Разница между текущей и предыдущей позицией
-}
-
-    console.log('event',event);
+    const deltaY = event.deltaY
 
     let lentWidth = sliderLent.scrollWidth;
     const minOffset = 0
@@ -78,10 +72,4 @@ if(event.type === 'touchmove'){
 
   // Добавляем обработчики событий
   document.addEventListener('wheel', throttled);
-  document.addEventListener('touchmove', throttled);
-
-  document.addEventListener('touchstart', (e) => {
-  lastY = e.touches[0].clientY; // Запоминаем начальную позицию
-}, {passive: true});
-
 });
