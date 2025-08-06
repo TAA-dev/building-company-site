@@ -30,7 +30,20 @@
 
 
 
-    
+    <div class="burger-menu">
+  <button class="burger-btn">
+    <span class="burger-menu__line"></span>
+    <span class="burger-menu__line"></span>
+    <span class="burger-menu__line"></span>
+  </button>
+
+  <div class="burger-menu__layer">
+    <a href="about-us.html" class="menu-item">О компании</a>
+    <a href="projects.html" class="menu-item">Реализованные проекты</a>
+    <a href="contacts.html" class="menu-item">Контакты</a>
+  </div>
+</div>
+
 
   </div>
 </header>
@@ -83,7 +96,7 @@
     // Создаем карту
     var myMap = new ymaps.Map("map", {
       center: pointB,
-      zoom: 15,
+      zoom: 10,
       controls: [],
     });
 
@@ -118,7 +131,16 @@
     });
 
     // Добавляем маршрут на карту
-    myMap.geoObjects.add(route1).add(route2);
+    myMap.geoObjects.add(route1).add(route2)
+
+
+
+
+    const bounds = ymaps.util.bounds.fromPoints([ pointA, pointC ]);
+    myMap.setBounds(bounds, {
+      checkZoomRange: true,
+      zoomMargin: 5
+    });
   }
 </script>
 
