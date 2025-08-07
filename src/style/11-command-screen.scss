@@ -1,10 +1,7 @@
 .command {
   &__photo {
     margin-bottom: 2.75rem;
-
-    @media (max-width: 1440px) {
-      width: 100%;
-    }
+    width: 100%;
   }
 
   &__sub-title {
