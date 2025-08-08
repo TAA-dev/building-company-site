@@ -20,7 +20,7 @@
       grid-template-rows: 1fr;
     }
 
-    &-aternative {
+    &-alternative {
       grid-template-columns: 40% 60%;
 
       @media (max-width: 430px) {
@@ -58,11 +58,38 @@
     font-size: 1.25rem;
   }
 
+  &__about {
+    color: var(--color-text);
+    font: var(--main-font-regular);
+    font-size: 1.25rem;
+    margin: 0 0 1rem;
+    text-align: justify;
+    font-size: 1.1rem;
+
+    &-ul {
+      list-style-type: none;
+      padding-left: 1rem;
+
+      & li {
+        margin-bottom: 1rem;
+        text-align: left;
+      }
+    }
+  }
+
   &__project {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1.5rem;
+
+
+    &-correct-order {
+      @media (max-width: 430px) {
+        order: -1;
+        gap: 0;
+      }
+    }
   }
 
   &__project-first {
