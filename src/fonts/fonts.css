@@ -37,3 +37,13 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: franklin;
+  src:
+    url('../fonts/Franklin-Gothic-Demi-Cond.woff2') format('woff2'),
+    url('../fonts/Franklin-Gothic-Demi-Cond.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

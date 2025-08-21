@@ -1,6 +1,7 @@
 .about-us {
   &__title {
-    margin-bottom: 1.5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
   }
 
 
@@ -9,18 +10,28 @@
   }
 
 
+  @keyframes collapseRight {
+    to {
+      clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 100% 0%);
+    }
+  }
+
   &__photo {
     width: 100%;
     margin-bottom: 3rem;
+    transition: all .2s ease-in-out;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+
+
+    &:hover {
+      animation: collapseRight 0.5s forwards;
+    }
   }
 
 
   &__sub-title {
-    font: var(--main-font-medium);
-    font-size: 1.5rem;
-    line-height: 1.5;
-    color: var(--color-title);
-    margin-bottom: 0.5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
   }
 
 

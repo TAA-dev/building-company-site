@@ -19,6 +19,8 @@
   --main-font-semi-bold: normal normal 600 1rem "inter", sans-serif;
   --main-font-bold: normal normal 700 1rem "inter", sans-serif;
 
+  --secondary-font-bold: normal normal 700 1rem "franklin", sans-serif;
+
 
   --main-bg-gradient: linear-gradient(90deg, rgba(135, 150, 175, 1) 0%, rgba(255, 255, 255, 0) 100%);
 

@@ -33,6 +33,19 @@ body {
 }
 
 
+.page-title {
+  text-align: center;
+  font: var(--secondary-font-bold);
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: .2rem;
+  color: #2a4074;
+
+  &_light {
+    color: #436490;
+  }
+}
+
 .text-main {
   color: var(--color-text);
   font: var(--main-font-regular);
