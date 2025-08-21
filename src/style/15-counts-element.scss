@@ -1,0 +1,19 @@
+.counts-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid #dcdcdc;
+}
+
+.counts-card {
+  padding: 1rem;
+
+
+  &__left {
+    padding-left: 25%;
+  }
+
+  &__center {
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+  }
+}
