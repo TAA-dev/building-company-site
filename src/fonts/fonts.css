@@ -41,9 +41,20 @@
 @font-face {
   font-family: franklin;
   src:
-    url('../fonts/Franklin-Gothic-Demi-Cond.woff2') format('woff2'),
-    url('../fonts/Franklin-Gothic-Demi-Cond.woff') format('woff');
+    url('../fonts/Franklin-Gothic-Heavy.woff2') format('woff2'),
+    url('../fonts/Franklin-Gothic-Heavy.woff') format('woff');
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: druk;
+  src:
+    url('../fonts/Druk-Text-Wide-Medium.woff2') format('woff2'),
+    url('../fonts/Druk-Text-Wide-Medium.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
