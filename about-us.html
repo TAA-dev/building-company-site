@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О компании ИнвесТо</title>
-    <link rel="stylesheet" href="./style/style-min.css">
-    <link rel="icon" href="./img/logo.svg" type="image/svg">
-    <meta name="description" content="«ИнвесТо» — строительство современных жилых комплексов и коттеджей под ключ. Используем качественные материалы и инновационные технологии.">
 
-  </head>
-  <body>
-    <main class="content">
-      <header class="header">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О компании ИнвесТо</title>
+  <link rel="stylesheet" href="./style/style-min.css">
+  <link rel="icon" href="./img/logo.svg" type="image/svg">
+  <meta name="description"
+    content="«ИнвесТо» — строительство современных жилых комплексов и коттеджей под ключ. Используем качественные материалы и инновационные технологии.">
+
+</head>
+
+<body>
+  <main class="content">
+    <div id="preloader" class="preloader">
+  <div id="preloaderLogo" class="preloader__logo logo"></div>
+</div>
+
+    <header class="header">
   <div class="content-wrapper header__inner">
 
     <a href="index.html">
@@ -45,22 +52,24 @@
   </div>
 </header>
 
-      <section class="about-us">
+    <section class="about-us">
   <div class="content-wrapper">
-    <h2 class="title-main about-us__title">
+    <h2 class="title-main about-us__title page-title">
       Команда — наш ключевой актив.
+      <br />
+      <span class="page-title_light">Стратегию и тактику ИнвесТо <br /> определяют визионеры с <br /> инновационным
+        мышлением и <br />
+        приверженностью к <br /> совершенству.</span>
     </h2>
-
-    <p class="text-main about-us__description">
-      Стратегию и тактику ИнвесТо определяют визионеры с инновационным мышлением и
-      страстью к совершенству.
-    </p>
   </div>
 
-  <img class="about-us__photo" src="img/about-us/photo.jpg" alt="">
+  <div class="about-us__photos-wrapper slide-effect-element">
+    <img class="about-us__photo about-us__photo-down" src="img/about-us/photo-1.jpg" alt="">
+    <img class="about-us__photo about-us__photo-up" src="img/about-us/photo-2.jpg" alt="">
+  </div>
 
   <div class="content-wrapper">
-    <h3 class="about-us__sub-title">Лучшие эксперты и профессионалы рынка девелопмента</h3>
+    <h3 class="about-us__sub-title page-title">Лучшие эксперты и <br /> профессионалы рынка <br /> девелопмента</h3>
     <p class="about-us__text">
       В штате группы компаний: архитекторы, визуализаторы, BIM-программисты, конструкторы,
       инженеры-проектировщики, руководители проектов, полный состав инженерно-технических работников с опытом
@@ -71,6 +80,10 @@
 
     <img class="about-us__map" src="img/about-us/map.jpg" alt="">
   </div>
+
+  <div class="run-string investo-block-run"></div>
+
+
 
   <div class="content-wrapper">
   <footer class="footer">
@@ -91,7 +104,8 @@
 
 </section>
 
-    </main>
-    <script src="./js/main-min.js"></script>
-  </body>
+  </main>
+  <script src="./js/main-min.js"></script>
+</body>
+
 </html>
