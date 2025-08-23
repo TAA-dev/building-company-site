@@ -8,6 +8,10 @@
   animation: 240s run-string-investo forwards infinite linear;
 
   margin: 8rem 0 10rem;
+
+  @media (max-width: 430px) {
+    margin: 4rem 0 5rem;
+  }
 }
 
 @keyframes run-string-investo {

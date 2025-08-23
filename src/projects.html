@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Реализованные проекты</title>
-    <link rel="stylesheet" href="./style/style-min.css">
-    <link rel="icon" href="./img/logo.svg" type="image/svg">
-    <meta name="description" content="Реализованные проекты строительной компании «ИнвесТо» — примеры наших работ: жилые комплексы, коммерческие здания, реконструкции. Гарантия качества и соблюдение сроков.">
 
-  </head>
-  <body>
-    <main class="content">
-      @@include('template/header.html')
-      @@include('template/projects-screen.html')
-    </main>
-    <script src="./js/main-min.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реализованные проекты</title>
+  <link rel="stylesheet" href="./style/style-min.css">
+  <link rel="icon" href="./img/logo.svg" type="image/svg">
+  <meta name="description"
+    content="Реализованные проекты строительной компании «ИнвесТо» — примеры наших работ: жилые комплексы, коммерческие здания, реконструкции. Гарантия качества и соблюдение сроков.">
+
+</head>
+
+<body>
+  <main class="content">
+    @@include('template/preloader.html')
+    @@include('template/header.html')
+    @@include('template/projects-screen.html')
+  </main>
+  <script src="./js/main-min.js"></script>
+</body>
+
 </html>

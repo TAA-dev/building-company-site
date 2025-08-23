@@ -1,0 +1,40 @@
+@keyframes wrapper-animation {
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+@keyframes logo-animation {
+  to {
+    transform: scale(0);
+  }
+}
+
+
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_animated {
+    animation: 1s ease-in-out forwards 1s wrapper-animation;
+  }
+
+
+  &__logo {
+    transform: scale(1.5);
+
+    &_animated {
+      animation: 1s ease-in forwards 1s logo-animation;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.skyscrapers-images {
+  &__title {
+    margin: 10rem 0 5rem;
+  }
+
+
+  &__images-template {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+
+
+  &__photos-wrapper {
+    position: relative;
+  }
+
+
+  &__photo {
+    width: 100%;
+    height: auto;
+  }
+
+
+  &__photo-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

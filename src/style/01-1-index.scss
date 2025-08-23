@@ -38,8 +38,12 @@ body {
   font: var(--secondary-font-bold);
   font-size: 4rem;
   line-height: 1;
-  letter-spacing: .2rem;
   color: #2a4074;
+  line-height: 1.2;
+
+  @media (max-width: 430px) {
+    font-size: 1.5rem;
+  }
 
   &_light {
     color: #436490;

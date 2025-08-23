@@ -1,4 +1,15 @@
 .structure {
+  &__logo-wrapper {
+    margin: 10rem 0;
+  }
+
+  &__logo {
+    margin: auto;
+  }
+
+
+
+
   &__title {
     margin-bottom: 3rem;
 
@@ -24,10 +35,10 @@
 
 
   &__card-title {
-    color: var(--color-title);
+    color: #204274;
     font: var(--main-font-medium);
     font-size: 1.5rem;
-    margin: 0 0 1rem;
+    margin: 0 0 2.1875rem;
 
     @media (max-width: 430px) {
       margin-bottom: 1rem;
@@ -36,9 +47,10 @@
 
 
   &__card-body {
-    color: var(--color-text);
+    color: #828282;
     font: var(--main-font-medium);
-    font-size: 1.4rem;
+    font-weight: 500;
+    font-size: 1.5rem;
     line-height: 1.5;
     margin: 0;
 
