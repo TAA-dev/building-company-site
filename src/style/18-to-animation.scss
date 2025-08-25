@@ -26,10 +26,23 @@
   }
 }
 
+@media (max-width: 430px) {
+  @keyframes to-scale-animation {
+    to {
+      transform: scale(2);
+      opacity: 1;
+    }
+  }
+}
+
 
 .to-scale-animation-element-init-position {
   transform: scale(3);
   opacity: 0;
+
+  @media (max-width: 430px) {
+    transform: scale(1);
+  }
 }
 
 
