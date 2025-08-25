@@ -1,0 +1,38 @@
+@keyframes to-up-animation {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.to-up-animation-init-position {
+  transform: translateY(5rem);
+  opacity: 0;
+}
+
+
+.to-up-animation {
+  animation: .5s forwards ease to-up-animation;
+}
+
+
+
+
+@keyframes to-scale-animation {
+  to {
+    transform: scale(5);
+    opacity: 1;
+  }
+}
+
+
+.to-scale-animation-element-init-position {
+  transform: scale(3);
+  opacity: 0;
+}
+
+
+.to-scale-animation {
+  animation: .8s forwards ease to-scale-animation;
+}
