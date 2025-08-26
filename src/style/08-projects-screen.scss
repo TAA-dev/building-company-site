@@ -35,6 +35,15 @@
         grid-template-rows: 1fr;
       }
     }
+
+    &-half-to-half {
+      grid-template-columns: 50% 50%;
+
+      @media (max-width: 430px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+      }
+    }
   }
 
   &__photo {
@@ -80,7 +89,6 @@
   &__project {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 1.5rem;
 
 
